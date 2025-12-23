@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-Map Minimizer</title>
+
+    <!-- Tailwind for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React, ReactDOM, and Babel (for JSX) -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <div id="root"></div>
+
+    <!-- Load your JSX file -->
+    <script type="text/babel" src="project.jsx"></script>
+
+    <!-- Render it -->
+    <script type="text/babel">
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<App />);
+    </script>
+</body>
+
+</html>
